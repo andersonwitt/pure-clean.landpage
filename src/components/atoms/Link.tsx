@@ -5,8 +5,7 @@ interface ILinkProps {
 }
 
 const Link: React.FC<ILinkProps> = ({ href = "", children, onClick }) => {
-  
-    const handleClick = (
+  const handleClick = (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {
     onClick?.(event);
