@@ -1,11 +1,7 @@
-import React from "react";
+import Home from "./components/templates/home";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Pure Clean Initial Blank Page</h1>
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;

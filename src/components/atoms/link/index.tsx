@@ -8,6 +8,7 @@ const Link: React.FC<ILinkProps> = ({ href = "", children, onClick }) => {
   const handleClick = (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {
+    event.preventDefault();
     onClick?.(event);
   };
 

@@ -1,9 +1,8 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Pure Clean Initial Blank Page/i);
-  expect(linkElement).toBeInTheDocument();
+it("should render home page", () => {
+  const { getByTestId } = render(<App />);
+  expect(getByTestId("home-page")).toBeInTheDocument();
 });
