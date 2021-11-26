@@ -1,3 +1,4 @@
+import "./Link.css";
 interface ILinkProps {
   href?: string;
   children?: React.ReactNode;
@@ -13,7 +14,7 @@ const Link: React.FC<ILinkProps> = ({ href = "", children, onClick }) => {
   };
 
   return (
-    <a href={href} onClick={handleClick}>
+    <a className="link" href={href} onClick={handleClick}>
       {children}
     </a>
   );

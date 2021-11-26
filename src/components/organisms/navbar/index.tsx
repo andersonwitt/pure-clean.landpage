@@ -1,3 +1,4 @@
+import "./NavBar.css";
 import NavLink, { NavDataType } from "../../molecules/NavLink";
 
 export const navData: NavDataType[] = [
@@ -17,8 +18,11 @@ export const navData: NavDataType[] = [
 
 const NavBar = () => {
   return (
-    <nav>
-      <NavLink navData={navData} />
+    <nav className="navbar">
+      <>
+        <h6>1</h6>
+        <NavLink navData={navData} />
+      </>
     </nav>
   );
 };

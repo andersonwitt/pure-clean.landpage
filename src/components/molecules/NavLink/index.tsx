@@ -11,13 +11,13 @@ interface INavLinkProps {
 
 const NavLink: React.FC<INavLinkProps> = ({ navData }) => {
   return (
-    <>
+    <div>
       {navData.map((nav, index) => (
         <Link onClick={nav.onClick} key={`nav-link-${index}`}>
           {nav.title}
         </Link>
       ))}
-    </>
+    </div>
   );
 };
 
