@@ -20,7 +20,7 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <>
-        <h6>1</h6>
+        <h6>Logo</h6>
         <NavLink navData={navData} />
       </>
     </nav>
