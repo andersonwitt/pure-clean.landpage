@@ -1,0 +1,22 @@
+.header-content {
+    margin-top: 3rem;
+}
+.header-title {
+    font-size: 3.0rem;
+    font-weight: 700;
+    color: #262222;
+    margin-bottom: 0.5rem;
+}
+.header-subtitle {
+    font-size: 3.0rem;
+    font-weight: 700;
+    color: #c62828;
+    margin-bottom: 0.5rem;
+}
+.header-text {
+    font-size: 1.2rem;
+    text-align: justify;
+    font-weight: 400;
+    color: #262222;
+    margin-bottom: 0.5rem;
+}

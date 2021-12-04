@@ -10,4 +10,9 @@ describe("Home Template Component", () => {
     const { getByRole } = render(<Home />);
     expect(getByRole("navigation")).toBeInTheDocument();
   });
+
+  it("Should render header", () => {
+    const { getByTestId } = render(<Home />);
+    expect(getByTestId("header-section")).toBeInTheDocument();
+  });
 });
